@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: auto;
+    height: 130px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -15px 95px 0px 50px;
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(/Fonts/HelveticaNeue\ Medium.ttf);
+}
+
+nav .btn button {
+    border: none;
+    background-color: rgb(229,9,20);
+    color: #fff;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("https://assets.nflxext.com/ffe/siteui/vlv3/42df4e1f-bef6-499e-87ff-c990584de314/27f02d91-ff75-4afe-bf7a-cdaaca883fc3/NP-en-20230904-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-position: center bottom;
+    background-size: 122%;
+    background-repeat: no-repeat;
+    height: 110vh;
+    position: relative;
+}
+
+/* header::after {
+    position: absolute;
+    content:  " ";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+
+
+/* hero titles */
+section.hero-titles {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 53px;
+}
+
+@font-face {
+    font-family: helveticaNeuBold;
+    src: url(./Fonts/Helvetica\ Neu\ Bold.ttf);
+}
+.main-title h1 {
+    font-size: 53px;
+    text-wrap:nowrap;
+    font-family: helveticaNeuBold;
+    letter-spacing: -1.5px;
+}
+
+@font-face {
+    font-family: helveticaNeumedium;
+    src: url(./Fonts/HelveticaNeue\ Medium.ttf);
+}
+.main-title p {
+    font-size: 23px;
+    font-family: helveticaNeumedium;
+    letter-spacing: .7px;
+    margin-top: 22px;
+}
+
+.search-box p {
+    font-size: 20px;
+    font-family: helveticaNeumedium;
+    letter-spacing: .7px;
+    margin-top: 22px;
+}
+
+
+.searchbox-with-btn {
+    margin-top: 20px;
+}
+
+
+input[type=email] {
+    background-color: black;
+    opacity: .5;
+    color: #fff;
+    font-family: helveticaNeumedium;
+    font-size: 16px;
+    padding: 18px;
+    border: none;
+    width: 40%;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-right: 4px;
+
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.searchbox-with-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbox-with-btn button {
+    font-family: helveticaNeumedium;
+    background-color: rgb(229,9,20);
+    padding: 13px 35px;
+    font-size: 24px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 4px;
+}
+
+.searchbox-with-btn .fa-angle-right {
+    font-size: 29px;
+}
+
+.hr-line hr {
+    background-color: rgb(61, 61, 61);
+    border: none;
+    height: 7px;
+}
+
+.enjoy-block {
+    color: #fff;
+    background-color: #000;
+    height: 75vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 170px;
+}
+
+.enjoy-block .left h1 {
+    font-family: helveticaNeuBold;
+    font-size: 50px;
+}
+
+.enjoy-block .left p {
+    font-family: helveticaNeumedium;
+    font-size: 23px;
+    width: 80%;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+.enjoy-block .right img {
+    width: auto;
+    height: 205px;
+    border: 2.5px solid rgb(61, 61, 61);
+}
+
+/* download bloack */
+
+.download-block {
+    color: #fff;
+    background-color: #000;
+    height: 75vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 170px;
+}
+
+.download-block .right h1 {
+    font-family: helveticaNeuBold;
+    font-size: 50px;
+}
+
+.download-block .right p {
+    font-family: helveticaNeumedium;
+    font-size: 23px;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+.download-block .left img {
+    width: auto;
+    height: 335px;
+    /* border: 2.5px solid rgb(61, 61, 61); */
+}
+
+
+/* profile block */
+.profile-block {
+    color: #fff;
+    background-color: #000;
+    height: 75vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 170px;
+}
+
+.profile-block .left h1 {
+    font-family: helveticaNeuBold;
+    font-size: 50px;
+}
+
+.profile-block .left p {
+    font-family: helveticaNeumedium;
+    font-size: 23px;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+.profile-block .right img {
+    width: auto;
+    height: 355px;
+    /* border: 2.5px solid rgb(61, 61, 61); */
+}
